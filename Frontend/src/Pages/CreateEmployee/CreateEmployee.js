@@ -126,7 +126,7 @@ const CreateEmployee = () => {
                     setImage(null); // Clear the image
                     setValidationErrors([]);
                 } else {
-                    alert(response.data.error);
+                    alert("User Already Exist");
                 }
             } else {
                 alert("Image upload failed");

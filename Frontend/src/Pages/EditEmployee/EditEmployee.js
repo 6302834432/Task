@@ -131,7 +131,7 @@ const EditEmployee = () => {
                 : { data: { success: true, image_url: formData.imageUrl } };
 
             if (imageResponse.data.success) {
-                const response = await axios.put(`http://localhost:8000/employees/${id}`, {
+                const response = await axios.put(`http://localhost:8000/updateemployee/${id}`, {
                     ...formData,
                     imageUrl: imageResponse.data.image_url,
                 });
